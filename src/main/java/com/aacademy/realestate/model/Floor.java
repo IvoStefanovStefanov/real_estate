@@ -14,12 +14,11 @@ import javax.validation.constraints.NotNull;
 @Builder
 @Entity
 @Table(name ="floor")
-
 public class Floor {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    privete Long id;
+    private Long id;
 
     @NotNull
     @Column(unique = true, nullable = false)
